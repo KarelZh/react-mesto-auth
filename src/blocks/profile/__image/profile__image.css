@@ -1,0 +1,15 @@
+.profile__image {
+    max-width: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+.profile__image:hover {
+    opacity: 0.5;
+    z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+    .profile__image {
+        margin: 0 auto;
+    }
+}

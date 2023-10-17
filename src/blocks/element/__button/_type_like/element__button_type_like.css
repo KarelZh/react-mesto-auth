@@ -1,0 +1,13 @@
+.element__button_type_like {
+  background-image: url(../../../../images/Like-black.png);
+  background-repeat: no-repeat;
+  min-width: 22px;
+  min-height: 19px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.element__button_type_like:hover {
+    opacity: 0.5;
+}

@@ -1,0 +1,16 @@
+.element__reset {
+  background-image: url(../../../images/reset.png);
+  background-repeat: no-repeat;
+  max-width: 18px;
+  min-height: 19px;
+  border: none;
+  background-color: rgba(28, 28, 28, 0);
+  cursor: pointer;
+  position: relative;
+  top: -68%;
+  left: 85%;
+}
+
+.element__reset:hover {
+  opacity: 0.5;
+}

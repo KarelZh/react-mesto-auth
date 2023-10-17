@@ -1,0 +1,12 @@
+.profile__ping {
+  min-width: 26px;
+  max-height: 26px;
+  cursor: pointer;
+  position: relative;
+  left: -75px;
+  bottom: -50px;
+  z-index: 1;
+}
+.profile__ping:hover {
+  z-index: 2;
+}

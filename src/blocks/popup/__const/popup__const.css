@@ -1,0 +1,11 @@
+.popup__const {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 549px) {
+  .popup__const {
+      align-items: center;
+  }
+}
