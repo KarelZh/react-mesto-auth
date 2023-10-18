@@ -1,4 +1,4 @@
-
+import { api } from "../utils/Api";
 
 export const BASE_URL = 'https://auth.nomoreparties.co';
 
@@ -10,7 +10,7 @@ export const register = ({ email, password }) => {
     },
     body: JSON.stringify({email, password})
   })
-  .then((response) => response.json())
+  .then(api._checkResponse)
 };
 
 export const authorize = ({ email, password }) => {
@@ -22,7 +22,7 @@ export const authorize = ({ email, password }) => {
     },
     body: JSON.stringify({ email, password})
   })
-  .then((response => response.json()))
+  .then(api._checkResponse)
 }
 
 export const getContent = (token) => {
@@ -34,5 +34,5 @@ export const getContent = (token) => {
       'Authorization': `Bearer ${token}`,
     }
   })
-  .then(res => res.json())
+  .then(api._checkResponse)
 }

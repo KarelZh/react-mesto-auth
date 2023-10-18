@@ -143,10 +143,9 @@ function App() {
       if(res) {
         setIsInfoToolTips(true)
         return res;
-      }else{
-        setInErrorToolTip(true)
       }
     }).catch((err) => {
+      setInErrorToolTip(true)
       console.error(err)
     })
   }
