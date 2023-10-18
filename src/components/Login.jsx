@@ -1,7 +1,5 @@
-import Header from "./Header";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 
 function Login({ onLogin }) {
   const [email, setEmail] = useState('');
@@ -23,9 +21,6 @@ function Login({ onLogin }) {
 
   return(
     <>
-      <Header 
-        name='Регистрация'
-      />
       <div className="register">
         <p className="register__name">
             Вход

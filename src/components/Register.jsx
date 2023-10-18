@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Header from "./Header";
 import { Link, useNavigate } from "react-router-dom";
 
 
@@ -10,19 +9,13 @@ function Register({ onRegister }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onRegister({ email, password }).then(() => {
-      navigate('/sign-in');
-    }).catch((err) => {
-      console.error(err)
+    onRegister({ email, password }).then((res) => {
+      navigate('/sign-in')
     })
-    console.log(password, email)
   }
 
   return(
     <>
-      <Header 
-        name='Войти'
-      />
       <div className="register">
         <p className="register__name">
             Регистрация
